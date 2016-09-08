@@ -1,0 +1,467 @@
+# Logfile created on 2016-09-07 16:24:42 +0900 by logger.rb/54362
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-07 16:24:42 +0900 cap development deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d18201b4] Running [ -d /usr/local/rbenv/versions/2.3.1 ] as kozawa@192.168.116.131
+ DEBUG [d18201b4] Command: [ -d /usr/local/rbenv/versions/2.3.1 ]
+ DEBUG [d18201b4] Finished in 0.302 seconds with exit status 0 (successful).
+  INFO [b506bcca] Running /usr/bin/env mkdir -p /tmp as kozawa@192.168.116.131
+ DEBUG [b506bcca] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [b506bcca] Finished in 0.067 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foo-development-kozawa.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foo-development-kozawa.sh 100.0%
+  INFO [c81b948a] Running /usr/bin/env chmod 700 /tmp/git-ssh-foo-development-kozawa.sh as kozawa@192.168.116.131
+ DEBUG [c81b948a] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-foo-development-kozawa.sh )
+  INFO [c81b948a] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO [b76b482b] Running /usr/bin/env git ls-remote --heads https://github.com/k-ozawa/foo.git as kozawa@192.168.116.131
+ DEBUG [b76b482b] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git ls-remote --heads https://github.com/k-ozawa/foo.git )
+ DEBUG [b76b482b] 	13b5994103f39d26244aba72d0dd9f8d56507781	refs/heads/master
+  INFO [b76b482b] Finished in 1.063 seconds with exit status 0 (successful).
+  INFO [6a5028d8] Running /usr/bin/env mkdir -p /var/www/foo/shared /var/www/foo/releases as kozawa@192.168.116.131
+ DEBUG [6a5028d8] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/shared /var/www/foo/releases )
+  INFO [6a5028d8] Finished in 0.071 seconds with exit status 0 (successful).
+  INFO [fd26fb42] Running /usr/bin/env mkdir -p /var/www/foo/shared/public/assets as kozawa@192.168.116.131
+ DEBUG [fd26fb42] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/shared/public/assets )
+  INFO [fd26fb42] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-07 16:24:50 +0900 cap development deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [febca04f] Running [ -d /usr/local/rbenv/versions/2.3.1 ] as kozawa@192.168.116.131
+ DEBUG [febca04f] Command: [ -d /usr/local/rbenv/versions/2.3.1 ]
+ DEBUG [febca04f] Finished in 0.268 seconds with exit status 0 (successful).
+  INFO [81714fc2] Running /usr/bin/env mkdir -p /tmp as kozawa@192.168.116.131
+ DEBUG [81714fc2] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [81714fc2] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foo-development-kozawa.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foo-development-kozawa.sh 100.0%
+  INFO [e6e34c05] Running /usr/bin/env chmod 700 /tmp/git-ssh-foo-development-kozawa.sh as kozawa@192.168.116.131
+ DEBUG [e6e34c05] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-foo-development-kozawa.sh )
+  INFO [e6e34c05] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [c562b890] Running /usr/bin/env git ls-remote --heads https://github.com/k-ozawa/foo.git as kozawa@192.168.116.131
+ DEBUG [c562b890] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git ls-remote --heads https://github.com/k-ozawa/foo.git )
+ DEBUG [c562b890] 	13b5994103f39d26244aba72d0dd9f8d56507781	refs/heads/master
+  INFO [c562b890] Finished in 1.086 seconds with exit status 0 (successful).
+  INFO [f714c2dd] Running /usr/bin/env mkdir -p /var/www/foo/shared /var/www/foo/releases as kozawa@192.168.116.131
+ DEBUG [f714c2dd] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/shared /var/www/foo/releases )
+  INFO [f714c2dd] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [b0d4ceeb] Running /usr/bin/env mkdir -p /var/www/foo/shared/public/assets as kozawa@192.168.116.131
+ DEBUG [b0d4ceeb] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/shared/public/assets )
+  INFO [b0d4ceeb] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [0e9e9eb1] Running [ -f /var/www/foo/current/REVISION ] as kozawa@192.168.116.131
+ DEBUG [0e9e9eb1] Command: [ -f /var/www/foo/current/REVISION ]
+ DEBUG [0e9e9eb1] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [401465cb] Running [ -f /var/www/foo/repo/HEAD ] as kozawa@192.168.116.131
+ DEBUG [401465cb] Command: [ -f /var/www/foo/repo/HEAD ]
+ DEBUG [401465cb] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/foo/repo
+ DEBUG [80e5beeb] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [80e5beeb] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [80e5beeb] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [cddfc267] Running /usr/bin/env git remote update --prune as kozawa@192.168.116.131
+ DEBUG [cddfc267] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [cddfc267] 	Fetching origin
+  INFO [cddfc267] Finished in 1.704 seconds with exit status 0 (successful).
+ DEBUG [0e600860] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [0e600860] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [0e600860] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [516ba4c6] Running /usr/bin/env mkdir -p /var/www/foo/releases/20160907072452 as kozawa@192.168.116.131
+ DEBUG [516ba4c6] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env mkdir -p /var/www/foo/releases/20160907072452 )
+  INFO [516ba4c6] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [b4327f47] Running /usr/bin/env git archive master | tar -x -f - -C /var/www/foo/releases/20160907072452 as kozawa@192.168.116.131
+ DEBUG [b4327f47] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git archive master | tar -x -f - -C /var/www/foo/releases/20160907072452 )
+  INFO [b4327f47] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [96c6f161] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [96c6f161] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [96c6f161] Finished in 0.060 seconds with exit status 0 (successful).
+ DEBUG [97e13388] Running /usr/bin/env git rev-list --max-count=1 master as kozawa@192.168.116.131
+ DEBUG [97e13388] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [97e13388] 	13b5994103f39d26244aba72d0dd9f8d56507781
+ DEBUG [97e13388] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [205dba07] Running if test ! -d /var/www/foo/releases/20160907072452; then echo "Directory does not exist '/var/www/foo/releases/20160907072452'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [205dba07] Command: if test ! -d /var/www/foo/releases/20160907072452; then echo "Directory does not exist '/var/www/foo/releases/20160907072452'" 1>&2; false; fi
+ DEBUG [205dba07] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [e0b8e4b0] Running /usr/bin/env echo "13b5994103f39d26244aba72d0dd9f8d56507781" >> REVISION as kozawa@192.168.116.131
+ DEBUG [e0b8e4b0] Command: cd /var/www/foo/releases/20160907072452 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env echo "13b5994103f39d26244aba72d0dd9f8d56507781" >> REVISION )
+  INFO [e0b8e4b0] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [773fb7e2] Running /usr/bin/env mkdir -p /var/www/foo/releases/20160907072452/public as kozawa@192.168.116.131
+ DEBUG [773fb7e2] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/releases/20160907072452/public )
+  INFO [773fb7e2] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [c50d3d22] Running [ -L /var/www/foo/releases/20160907072452/public/assets ] as kozawa@192.168.116.131
+ DEBUG [c50d3d22] Command: [ -L /var/www/foo/releases/20160907072452/public/assets ]
+ DEBUG [c50d3d22] Finished in 0.060 seconds with exit status 1 (failed).
+ DEBUG [a56de4fe] Running [ -d /var/www/foo/releases/20160907072452/public/assets ] as kozawa@192.168.116.131
+ DEBUG [a56de4fe] Command: [ -d /var/www/foo/releases/20160907072452/public/assets ]
+ DEBUG [a56de4fe] Finished in 0.056 seconds with exit status 1 (failed).
+  INFO [48b2bc72] Running /usr/bin/env ln -s /var/www/foo/shared/public/assets /var/www/foo/releases/20160907072452/public/assets as kozawa@192.168.116.131
+ DEBUG [48b2bc72] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /var/www/foo/shared/public/assets /var/www/foo/releases/20160907072452/public/assets )
+  INFO [48b2bc72] Finished in 0.062 seconds with exit status 0 (successful).
+ DEBUG [2e2ba6e5] Running if test ! -d /var/www/foo/releases/20160907072452; then echo "Directory does not exist '/var/www/foo/releases/20160907072452'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [2e2ba6e5] Command: if test ! -d /var/www/foo/releases/20160907072452; then echo "Directory does not exist '/var/www/foo/releases/20160907072452'" 1>&2; false; fi
+ DEBUG [2e2ba6e5] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [5a8fb978] Running /usr/local/rbenv/bin/rbenv exec bundle install --path /var/www/foo/shared/bundle --without development test --deployment --quiet as kozawa@192.168.116.131
+ DEBUG [5a8fb978] Command: cd /var/www/foo/releases/20160907072452 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/local/rbenv/bin/rbenv exec bundle install --path /var/www/foo/shared/bundle --without development test --deployment --quiet )
+  INFO [5a8fb978] Finished in 0.520 seconds with exit status 0 (successful).
+ DEBUG [89ea15c2] Running if test ! -d /var/www/foo/releases/20160907072452; then echo "Directory does not exist '/var/www/foo/releases/20160907072452'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [89ea15c2] Command: if test ! -d /var/www/foo/releases/20160907072452; then echo "Directory does not exist '/var/www/foo/releases/20160907072452'" 1>&2; false; fi
+ DEBUG [89ea15c2] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [5ff46c4c] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile as kozawa@192.168.116.131
+ DEBUG [5ff46c4c] Command: cd /var/www/foo/releases/20160907072452 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" RAILS_ENV="development" ; /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [5ff46c4c] 	rake aborted!
+Bundler::GemRequireError: There was an error while trying to load the gem 'uglifier'.
+Gem Load Error is: Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes.
+Backtrace for gem load error is:
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/runtimes.rb:58:in `autodetect'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs.rb:5:in `<module:ExecJS>'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs.rb:4:in `<top (required)>'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.0/lib/uglifier.rb:5:in `require'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.0/lib/uglifier.rb:5:in `<top (required)>'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:86:in `require'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:86:in `block (2 levels) in require'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `each'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:81:in `block in require'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `each'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/runtime.rb:70:in `require'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler.rb:102:in `require'
+/var/www/foo/releases/20160907072452/config/application.rb:7:in `<top (required)>'
+/var/www/foo/releases/20160907072452/Rakefile:4:in `require_relative'
+/var/www/foo/releases/20160907072452/Rakefile:4:in `<top (required)>'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/rake_module.rb:28:in `load_rakefile'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/application.rb:686:in `raw_load_rakefile'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/application.rb:96:in `block in load_rakefile'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `standard_exception_handling'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/application.rb:95:in `load_rakefile'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/application.rb:79:in `block in run'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/application.rb:178:in `standard_exception_handling'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/lib/rake/application.rb:77:in `run'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/var/www/foo/shared/bundle/ruby/2.3.0/bin/rake:22:in `load'
+/var/www/foo/shared/bundle/ruby/2.3.0/bin/rake:22:in `<top (required)>'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `load'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:63:in `kernel_load'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/cli/exec.rb:24:in `run'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:304:in `exec'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/cli.rb:11:in `start'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/exe/bundle:27:
+ DEBUG [5ff46c4c] 	in `block in <top (required)>'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/lib/bundler/friendly_errors.rb:98:in `with_friendly_errors'
+/usr/local/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bundler-1.12.5/exe/bundle:19:in `<top (required)>'
+/usr/local/rbenv/versions/2.3.1/bin/bundle:22:in `load'
+/usr/local/rbenv/versions/2.3.1/bin/bundle:22:in `<main>'
+Bundler Error Backtrace:
+/var/www/foo/releases/20160907072452/config/application.rb:7:in `<top (required)>'
+/var/www/foo/releases/20160907072452/Rakefile:4:in `require_relative'
+/var/www/foo/releases/20160907072452/Rakefile:4:in `<top (required)>'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/usr/local/rbenv/versions/2.3.1/bin/bundle:22:in `load'
+/usr/local/rbenv/versions/2.3.1/bin/bundle:22:in `<main>'
+ExecJS::RuntimeUnavailable: Could not find a JavaScript runtime. See https://github.com/rails/execjs for a list of available runtimes.
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs/runtimes.rb:58:in `autodetect'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs.rb:5:in `<module:ExecJS>'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/execjs-2.7.0/lib/execjs.rb:4:in `<top (required)>'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.0/lib/uglifier.rb:5:in `require'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/uglifier-3.0.0/lib/uglifier.rb:5:in `<top (required)>'
+/var/www/foo/releases/20160907072452/config/application.rb:7:in `<top (required)>'
+/var/www/foo/releases/20160907072452/Rakefile:4:in `require_relative'
+/var/www/foo/releases/20160907072452/Rakefile:4:in `<top (required)>'
+/var/www/foo/shared/bundle/ruby/2.3.0/gems/rake-11.2.2/exe/rake:27:in `<top (required)>'
+/usr/local/rbenv/versions/2.3.1/bin/bundle:22:in `load'
+/usr/local/rbenv/versions/2.3.1/bin/bundle:22:in `<main>'
+(See full trace by running task with --trace)
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-07 16:43:31 +0900 cap development deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c12d0e1c] Running [ -d /usr/local/rbenv/versions/2.3.1 ] as kozawa@192.168.116.131
+ DEBUG [c12d0e1c] Command: [ -d /usr/local/rbenv/versions/2.3.1 ]
+ DEBUG [c12d0e1c] Finished in 0.354 seconds with exit status 0 (successful).
+  INFO [97b4f7fb] Running /usr/bin/env mkdir -p /tmp as kozawa@192.168.116.131
+ DEBUG [97b4f7fb] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [97b4f7fb] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foo-development-kozawa.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foo-development-kozawa.sh 100.0%
+  INFO [ef12d5cd] Running /usr/bin/env chmod 700 /tmp/git-ssh-foo-development-kozawa.sh as kozawa@192.168.116.131
+ DEBUG [ef12d5cd] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-foo-development-kozawa.sh )
+  INFO [ef12d5cd] Finished in 0.105 seconds with exit status 0 (successful).
+  INFO [45a80a77] Running /usr/bin/env git ls-remote --heads https://github.com/k-ozawa/foo.git as kozawa@192.168.116.131
+ DEBUG [45a80a77] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git ls-remote --heads https://github.com/k-ozawa/foo.git )
+ DEBUG [45a80a77] 	c34715880c7b2b26a3986fa921d65cd881f71ec1	refs/heads/master
+  INFO [45a80a77] Finished in 1.074 seconds with exit status 0 (successful).
+  INFO [3c76f876] Running /usr/bin/env mkdir -p /var/www/foo/shared /var/www/foo/releases as kozawa@192.168.116.131
+ DEBUG [3c76f876] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/shared /var/www/foo/releases )
+  INFO [3c76f876] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [63e6eec6] Running /usr/bin/env mkdir -p /var/www/foo/shared/public/assets as kozawa@192.168.116.131
+ DEBUG [63e6eec6] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/shared/public/assets )
+  INFO [63e6eec6] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [23a4bb4b] Running [ -f /var/www/foo/current/REVISION ] as kozawa@192.168.116.131
+ DEBUG [23a4bb4b] Command: [ -f /var/www/foo/current/REVISION ]
+ DEBUG [23a4bb4b] Finished in 0.066 seconds with exit status 1 (failed).
+ DEBUG [972a03e7] Running [ -f /var/www/foo/repo/HEAD ] as kozawa@192.168.116.131
+ DEBUG [972a03e7] Command: [ -f /var/www/foo/repo/HEAD ]
+ DEBUG [972a03e7] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/foo/repo
+ DEBUG [6a63184c] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [6a63184c] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [6a63184c] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [4abead83] Running /usr/bin/env git remote update --prune as kozawa@192.168.116.131
+ DEBUG [4abead83] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4abead83] 	Fetching origin
+ DEBUG [4abead83] 	remote: Counting objects: 3, done.[K
+remote: Compressing objects: 100% (1/1)   [Kremote: Compressing objects: 100% (1/1), done.[K
+ DEBUG [4abead83] 	Unpacking objects:  33% (1/3)   Unpacking objects:  66% (2/3)   Unpacking objects: 100% (3/3)   Unpacking objects: 100% (3/3), done.
+ DEBUG [4abead83] 	remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0[K
+ DEBUG [4abead83] 	From https://github.com/k-ozawa/foo
+   13b5994..c347158  master     -> master
+  INFO [4abead83] Finished in 2.296 seconds with exit status 0 (successful).
+ DEBUG [3183cdac] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [3183cdac] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [3183cdac] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [71682fbc] Running /usr/bin/env mkdir -p /var/www/foo/releases/20160907074333 as kozawa@192.168.116.131
+ DEBUG [71682fbc] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env mkdir -p /var/www/foo/releases/20160907074333 )
+  INFO [71682fbc] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [937cee8c] Running /usr/bin/env git archive master | tar -x -f - -C /var/www/foo/releases/20160907074333 as kozawa@192.168.116.131
+ DEBUG [937cee8c] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git archive master | tar -x -f - -C /var/www/foo/releases/20160907074333 )
+  INFO [937cee8c] Finished in 0.079 seconds with exit status 0 (successful).
+ DEBUG [39e26065] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [39e26065] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [39e26065] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [5b662049] Running /usr/bin/env git rev-list --max-count=1 master as kozawa@192.168.116.131
+ DEBUG [5b662049] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [5b662049] 	c34715880c7b2b26a3986fa921d65cd881f71ec1
+ DEBUG [5b662049] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [c6780c5a] Running if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [c6780c5a] Command: if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi
+ DEBUG [c6780c5a] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [a2867ac6] Running /usr/bin/env echo "c34715880c7b2b26a3986fa921d65cd881f71ec1" >> REVISION as kozawa@192.168.116.131
+ DEBUG [a2867ac6] Command: cd /var/www/foo/releases/20160907074333 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env echo "c34715880c7b2b26a3986fa921d65cd881f71ec1" >> REVISION )
+  INFO [a2867ac6] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [2bca1b83] Running /usr/bin/env mkdir -p /var/www/foo/releases/20160907074333/public as kozawa@192.168.116.131
+ DEBUG [2bca1b83] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/releases/20160907074333/public )
+  INFO [2bca1b83] Finished in 0.068 seconds with exit status 0 (successful).
+ DEBUG [1c215603] Running [ -L /var/www/foo/releases/20160907074333/public/assets ] as kozawa@192.168.116.131
+ DEBUG [1c215603] Command: [ -L /var/www/foo/releases/20160907074333/public/assets ]
+ DEBUG [1c215603] Finished in 0.069 seconds with exit status 1 (failed).
+ DEBUG [e59db4a1] Running [ -d /var/www/foo/releases/20160907074333/public/assets ] as kozawa@192.168.116.131
+ DEBUG [e59db4a1] Command: [ -d /var/www/foo/releases/20160907074333/public/assets ]
+ DEBUG [e59db4a1] Finished in 0.064 seconds with exit status 1 (failed).
+  INFO [21f58864] Running /usr/bin/env ln -s /var/www/foo/shared/public/assets /var/www/foo/releases/20160907074333/public/assets as kozawa@192.168.116.131
+ DEBUG [21f58864] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /var/www/foo/shared/public/assets /var/www/foo/releases/20160907074333/public/assets )
+  INFO [21f58864] Finished in 0.066 seconds with exit status 0 (successful).
+ DEBUG [f8c911db] Running if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [f8c911db] Command: if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi
+ DEBUG [f8c911db] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [9941880e] Running /usr/local/rbenv/bin/rbenv exec bundle install --path /var/www/foo/shared/bundle --without development test --deployment --quiet as kozawa@192.168.116.131
+ DEBUG [9941880e] Command: cd /var/www/foo/releases/20160907074333 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/local/rbenv/bin/rbenv exec bundle install --path /var/www/foo/shared/bundle --without development test --deployment --quiet )
+  INFO [9941880e] Finished in 58.049 seconds with exit status 0 (successful).
+ DEBUG [030bd243] Running if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [030bd243] Command: if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi
+ DEBUG [030bd243] Finished in 0.862 seconds with exit status 0 (successful).
+  INFO [a3ab5828] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile as kozawa@192.168.116.131
+ DEBUG [a3ab5828] Command: cd /var/www/foo/releases/20160907074333 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" RAILS_ENV="development" ; /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [a3ab5828] 	I, [2016-09-07T16:44:44.757445 #48300]  INFO -- : Writing /var/www/foo/releases/20160907074333/public/assets/application-ef6e439c687ceb11b04b3c21e4794543e625e9e19edb4a01ccc5f0753fc8e133.js
+I, [2016-09-07T16:44:44.758082 #48300]  INFO -- : Writing /var/www/foo/releases/20160907074333/public/assets/application-ef6e439c687ceb11b04b3c21e4794543e625e9e19edb4a01ccc5f0753fc8e133.js.gz
+ DEBUG [a3ab5828] 	I, [2016-09-07T16:44:44.870475 #48300]  INFO -- : Writing /var/www/foo/releases/20160907074333/public/assets/application-910e845a273116121318bc5c9ab2a0705c10e62d96cbb605863fe3fe352a9147.css
+I, [2016-09-07T16:44:44.870684 #48300]  INFO -- : Writing /var/www/foo/releases/20160907074333/public/assets/application-910e845a273116121318bc5c9ab2a0705c10e62d96cbb605863fe3fe352a9147.css.gz
+  INFO [a3ab5828] Finished in 8.829 seconds with exit status 0 (successful).
+ DEBUG [39d1daee] Running if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [39d1daee] Command: if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi
+ DEBUG [39d1daee] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [a88bb29f] Running /usr/bin/env mkdir -p /var/www/foo/releases/20160907074333/assets_manifest_backup as kozawa@192.168.116.131
+ DEBUG [a88bb29f] Command: cd /var/www/foo/releases/20160907074333 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/releases/20160907074333/assets_manifest_backup )
+  INFO [a88bb29f] Finished in 0.069 seconds with exit status 0 (successful).
+ DEBUG [9cdd0a49] Running /usr/bin/env ls /var/www/foo/releases/20160907074333/public/assets/.sprockets-manifest* as kozawa@192.168.116.131
+ DEBUG [9cdd0a49] Command: cd /var/www/foo/releases/20160907074333 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ls /var/www/foo/releases/20160907074333/public/assets/.sprockets-manifest* )
+ DEBUG [9cdd0a49] 	/var/www/foo/releases/20160907074333/public/assets/.sprockets-manifest-c0a2b1248d736a1c3206a5b2d7043f1f.json
+ DEBUG [9cdd0a49] Finished in 0.074 seconds with exit status 0 (successful).
+ DEBUG [8182cf7d] Running /usr/bin/env ls /var/www/foo/releases/20160907074333/public/assets/.sprockets-manifest* as kozawa@192.168.116.131
+ DEBUG [8182cf7d] Command: cd /var/www/foo/releases/20160907074333 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ls /var/www/foo/releases/20160907074333/public/assets/.sprockets-manifest* )
+ DEBUG [8182cf7d] 	/var/www/foo/releases/20160907074333/public/assets/.sprockets-manifest-c0a2b1248d736a1c3206a5b2d7043f1f.json
+ DEBUG [8182cf7d] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [9d2e0826] Running /usr/bin/env cp /var/www/foo/releases/20160907074333/public/assets/.sprockets-manifest-c0a2b1248d736a1c3206a5b2d7043f1f.json /var/www/foo/releases/20160907074333/assets_manifest_backup as kozawa@192.168.116.131
+ DEBUG [9d2e0826] Command: cd /var/www/foo/releases/20160907074333 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env cp /var/www/foo/releases/20160907074333/public/assets/.sprockets-manifest-c0a2b1248d736a1c3206a5b2d7043f1f.json /var/www/foo/releases/20160907074333/assets_manifest_backup )
+  INFO [9d2e0826] Finished in 0.075 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [ec9531c1] Running if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [ec9531c1] Command: if test ! -d /var/www/foo/releases/20160907074333; then echo "Directory does not exist '/var/www/foo/releases/20160907074333'" 1>&2; false; fi
+ DEBUG [ec9531c1] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [8b0328d6] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake db:migrate as kozawa@192.168.116.131
+ DEBUG [8b0328d6] Command: cd /var/www/foo/releases/20160907074333 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" RAILS_ENV="development" ; /usr/local/rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [8b0328d6] 	== 20160719073405 CreateUsers: migrating ======================================
+-- create_table(:users)
+ DEBUG [8b0328d6] 	   -> 0.0044s
+== 20160719073405 CreateUsers: migrated (0.0045s) =============================
+
+  INFO [8b0328d6] Finished in 1.911 seconds with exit status 0 (successful).
+  INFO [15b14e3d] Running /usr/bin/env ln -s /var/www/foo/releases/20160907074333 /var/www/foo/releases/current as kozawa@192.168.116.131
+ DEBUG [15b14e3d] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /var/www/foo/releases/20160907074333 /var/www/foo/releases/current )
+  INFO [15b14e3d] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [c1dfd0e4] Running /usr/bin/env mv /var/www/foo/releases/current /var/www/foo as kozawa@192.168.116.131
+ DEBUG [c1dfd0e4] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mv /var/www/foo/releases/current /var/www/foo )
+  INFO [c1dfd0e4] Finished in 0.077 seconds with exit status 0 (successful).
+ DEBUG [d2cc257a] Running /usr/bin/env ls -xtr /var/www/foo/releases as kozawa@192.168.116.131
+ DEBUG [d2cc257a] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ls -xtr /var/www/foo/releases )
+ DEBUG [d2cc257a] 	20160906051730	20160907050819	20160907050857	20160907053012	20160907055050
+20160907062247	20160907062435	20160907062935	20160907064332	20160907072135
+20160907072452	20160907073234	20160907074333
+ DEBUG [d2cc257a] Finished in 0.109 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 13 deployed releases on 192.168.116.131
+  INFO [31e107d1] Running /usr/bin/env rm -rf /var/www/foo/releases/20160906051730 /var/www/foo/releases/20160907050819 /var/www/foo/releases/20160907050857 /var/www/foo/releases/20160907053012 /var/www/foo/releases/20160907055050 /var/www/foo/releases/20160907062247 /var/www/foo/releases/20160907062435 /var/www/foo/releases/20160907062935 as kozawa@192.168.116.131
+ DEBUG [31e107d1] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm -rf /var/www/foo/releases/20160906051730 /var/www/foo/releases/20160907050819 /var/www/foo/releases/20160907050857 /var/www/foo/releases/20160907053012 /var/www/foo/releases/20160907055050 /var/www/foo/releases/20160907062247 /var/www/foo/releases/20160907062435 /var/www/foo/releases/20160907062935 )
+  INFO [31e107d1] Finished in 1.053 seconds with exit status 0 (successful).
+ DEBUG [6fd1d4af] Running if test ! -d /var/www/foo/releases; then echo "Directory does not exist '/var/www/foo/releases'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [6fd1d4af] Command: if test ! -d /var/www/foo/releases; then echo "Directory does not exist '/var/www/foo/releases'" 1>&2; false; fi
+ DEBUG [6fd1d4af] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [fa826ec3] Running /usr/bin/env echo "Branch master (at c34715880c7b2b26a3986fa921d65cd881f71ec1) deployed as release 20160907074333 by kozawa" >> /var/www/foo/revisions.log as kozawa@192.168.116.131
+ DEBUG [fa826ec3] Command: cd /var/www/foo/releases && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env echo "Branch master (at c34715880c7b2b26a3986fa921d65cd881f71ec1) deployed as release 20160907074333 by kozawa" >> /var/www/foo/revisions.log )
+  INFO [fa826ec3] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-08 14:41:25 +0900 cap development deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [5b34b6ed] Running [ -d /usr/local/rbenv/versions/2.3.1 ] as kozawa@192.168.116.131
+ DEBUG [5b34b6ed] Command: [ -d /usr/local/rbenv/versions/2.3.1 ]
+ DEBUG [5b34b6ed] Finished in 2.281 seconds with exit status 0 (successful).
+  INFO [e4c0dc69] Running /usr/bin/env mkdir -p /tmp as kozawa@192.168.116.131
+ DEBUG [e4c0dc69] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /tmp )
+  INFO [e4c0dc69] Finished in 0.081 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-foo-development-kozawa.sh 0.0%
+  INFO Uploading /tmp/git-ssh-foo-development-kozawa.sh 100.0%
+  INFO [f1265242] Running /usr/bin/env chmod 700 /tmp/git-ssh-foo-development-kozawa.sh as kozawa@192.168.116.131
+ DEBUG [f1265242] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env chmod 700 /tmp/git-ssh-foo-development-kozawa.sh )
+  INFO [f1265242] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [c09a2c34] Running /usr/bin/env git ls-remote --heads https://github.com/k-ozawa/foo.git as kozawa@192.168.116.131
+ DEBUG [c09a2c34] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git ls-remote --heads https://github.com/k-ozawa/foo.git )
+ DEBUG [c09a2c34] 	db396ccb7e9a74164debfc0affd8985952d3de55	refs/heads/master
+  INFO [c09a2c34] Finished in 1.068 seconds with exit status 0 (successful).
+  INFO [b05f3040] Running /usr/bin/env mkdir -p /var/www/foo/shared /var/www/foo/releases as kozawa@192.168.116.131
+ DEBUG [b05f3040] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/shared /var/www/foo/releases )
+  INFO [b05f3040] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO [ce9e0541] Running /usr/bin/env mkdir -p /var/www/foo/shared/public/assets as kozawa@192.168.116.131
+ DEBUG [ce9e0541] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/shared/public/assets )
+  INFO [ce9e0541] Finished in 0.059 seconds with exit status 0 (successful).
+ DEBUG [011c37d6] Running [ -f /var/www/foo/current/REVISION ] as kozawa@192.168.116.131
+ DEBUG [011c37d6] Command: [ -f /var/www/foo/current/REVISION ]
+ DEBUG [011c37d6] Finished in 0.116 seconds with exit status 0 (successful).
+ DEBUG [5c047285] Running /usr/bin/env cat /var/www/foo/current/REVISION 2>/dev/null as kozawa@192.168.116.131
+ DEBUG [5c047285] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env cat /var/www/foo/current/REVISION 2>/dev/null )
+ DEBUG [5c047285] 	c34715880c7b2b26a3986fa921d65cd881f71ec1
+ DEBUG [5c047285] Finished in 0.172 seconds with exit status 0 (successful).
+ DEBUG [42d50da3] Running [ -f /var/www/foo/repo/HEAD ] as kozawa@192.168.116.131
+ DEBUG [42d50da3] Command: [ -f /var/www/foo/repo/HEAD ]
+ DEBUG [42d50da3] Finished in 0.070 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /var/www/foo/repo
+ DEBUG [38001652] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [38001652] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [38001652] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [4b544e48] Running /usr/bin/env git remote update --prune as kozawa@192.168.116.131
+ DEBUG [4b544e48] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [4b544e48] 	Fetching origin
+ DEBUG [4b544e48] 	remote: Counting objects: 4, done.[K
+remote: Compressing objects: 100% (1/1)   [Kremote: Compressing objects: 100% (1/1), done.[K
+ DEBUG [4b544e48] 	remote: Total 4 (delta 3), reused 4 (delta 3), pack-reused 0[K
+ DEBUG [4b544e48] 	Unpacking objects:  25% (1/4)   
+ DEBUG [4b544e48] 	Unpacking objects:  50% (2/4)   Unpacking objects:  75% (3/4)   
+ DEBUG [4b544e48] 	Unpacking objects: 100% (4/4)   Unpacking objects: 100% (4/4), done.
+ DEBUG [4b544e48] 	From https://github.com/k-ozawa/foo
+   c347158..db396cc  master     -> master
+  INFO [4b544e48] Finished in 2.286 seconds with exit status 0 (successful).
+ DEBUG [cc5b9e48] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [cc5b9e48] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [cc5b9e48] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [32c8c055] Running /usr/bin/env mkdir -p /var/www/foo/releases/20160908054130 as kozawa@192.168.116.131
+ DEBUG [32c8c055] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env mkdir -p /var/www/foo/releases/20160908054130 )
+  INFO [32c8c055] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [4d8d3aba] Running /usr/bin/env git archive master | tar -x -f - -C /var/www/foo/releases/20160908054130 as kozawa@192.168.116.131
+ DEBUG [4d8d3aba] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git archive master | tar -x -f - -C /var/www/foo/releases/20160908054130 )
+  INFO [4d8d3aba] Finished in 0.183 seconds with exit status 0 (successful).
+ DEBUG [78baf77a] Running if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [78baf77a] Command: if test ! -d /var/www/foo/repo; then echo "Directory does not exist '/var/www/foo/repo'" 1>&2; false; fi
+ DEBUG [78baf77a] Finished in 0.113 seconds with exit status 0 (successful).
+ DEBUG [22860b06] Running /usr/bin/env git rev-list --max-count=1 master as kozawa@192.168.116.131
+ DEBUG [22860b06] Command: cd /var/www/foo/repo && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-foo-development-kozawa.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [22860b06] 	db396ccb7e9a74164debfc0affd8985952d3de55
+ DEBUG [22860b06] Finished in 0.061 seconds with exit status 0 (successful).
+ DEBUG [ce96fe66] Running if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [ce96fe66] Command: if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi
+ DEBUG [ce96fe66] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [acbed190] Running /usr/bin/env echo "db396ccb7e9a74164debfc0affd8985952d3de55" >> REVISION as kozawa@192.168.116.131
+ DEBUG [acbed190] Command: cd /var/www/foo/releases/20160908054130 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env echo "db396ccb7e9a74164debfc0affd8985952d3de55" >> REVISION )
+  INFO [acbed190] Finished in 0.077 seconds with exit status 0 (successful).
+  INFO [1784be91] Running /usr/bin/env mkdir -p /var/www/foo/releases/20160908054130/public as kozawa@192.168.116.131
+ DEBUG [1784be91] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/releases/20160908054130/public )
+  INFO [1784be91] Finished in 0.065 seconds with exit status 0 (successful).
+ DEBUG [6f25247b] Running [ -L /var/www/foo/releases/20160908054130/public/assets ] as kozawa@192.168.116.131
+ DEBUG [6f25247b] Command: [ -L /var/www/foo/releases/20160908054130/public/assets ]
+ DEBUG [6f25247b] Finished in 0.061 seconds with exit status 1 (failed).
+ DEBUG [379fb57f] Running [ -d /var/www/foo/releases/20160908054130/public/assets ] as kozawa@192.168.116.131
+ DEBUG [379fb57f] Command: [ -d /var/www/foo/releases/20160908054130/public/assets ]
+ DEBUG [379fb57f] Finished in 0.056 seconds with exit status 1 (failed).
+  INFO [7f143314] Running /usr/bin/env ln -s /var/www/foo/shared/public/assets /var/www/foo/releases/20160908054130/public/assets as kozawa@192.168.116.131
+ DEBUG [7f143314] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /var/www/foo/shared/public/assets /var/www/foo/releases/20160908054130/public/assets )
+  INFO [7f143314] Finished in 0.070 seconds with exit status 0 (successful).
+ DEBUG [f6ced031] Running if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [f6ced031] Command: if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi
+ DEBUG [f6ced031] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [5208ed2d] Running /usr/local/rbenv/bin/rbenv exec bundle install --path /var/www/foo/shared/bundle --without development test --deployment --quiet as kozawa@192.168.116.131
+ DEBUG [5208ed2d] Command: cd /var/www/foo/releases/20160908054130 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/local/rbenv/bin/rbenv exec bundle install --path /var/www/foo/shared/bundle --without development test --deployment --quiet )
+  INFO [5208ed2d] Finished in 1.158 seconds with exit status 0 (successful).
+ DEBUG [58b3bf7d] Running if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [58b3bf7d] Command: if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi
+ DEBUG [58b3bf7d] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [af8363cc] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile as kozawa@192.168.116.131
+ DEBUG [af8363cc] Command: cd /var/www/foo/releases/20160908054130 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" RAILS_ENV="development" ; /usr/local/rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [af8363cc] 	I, [2016-09-08T14:41:47.353080 #7012]  INFO -- : Writing /var/www/foo/releases/20160908054130/public/assets/application-2589258d533f6fc7b5686b24770ea85e266d066917c9e6a579d007be478d4362.css
+I, [2016-09-08T14:41:47.353594 #7012]  INFO -- : Writing /var/www/foo/releases/20160908054130/public/assets/application-2589258d533f6fc7b5686b24770ea85e266d066917c9e6a579d007be478d4362.css.gz
+  INFO [af8363cc] Finished in 12.685 seconds with exit status 0 (successful).
+ DEBUG [8951f9c8] Running if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [8951f9c8] Command: if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi
+ DEBUG [8951f9c8] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [ca5d922a] Running /usr/bin/env mkdir -p /var/www/foo/releases/20160908054130/assets_manifest_backup as kozawa@192.168.116.131
+ DEBUG [ca5d922a] Command: cd /var/www/foo/releases/20160908054130 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mkdir -p /var/www/foo/releases/20160908054130/assets_manifest_backup )
+  INFO [ca5d922a] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [ce922a98] Running /usr/bin/env ls /var/www/foo/releases/20160908054130/public/assets/.sprockets-manifest* as kozawa@192.168.116.131
+ DEBUG [ce922a98] Command: cd /var/www/foo/releases/20160908054130 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ls /var/www/foo/releases/20160908054130/public/assets/.sprockets-manifest* )
+ DEBUG [ce922a98] 	/var/www/foo/releases/20160908054130/public/assets/.sprockets-manifest-c0a2b1248d736a1c3206a5b2d7043f1f.json
+ DEBUG [ce922a98] Finished in 0.063 seconds with exit status 0 (successful).
+ DEBUG [ea457edb] Running /usr/bin/env ls /var/www/foo/releases/20160908054130/public/assets/.sprockets-manifest* as kozawa@192.168.116.131
+ DEBUG [ea457edb] Command: cd /var/www/foo/releases/20160908054130 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ls /var/www/foo/releases/20160908054130/public/assets/.sprockets-manifest* )
+ DEBUG [ea457edb] 	/var/www/foo/releases/20160908054130/public/assets/.sprockets-manifest-c0a2b1248d736a1c3206a5b2d7043f1f.json
+ DEBUG [ea457edb] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [a7f7d570] Running /usr/bin/env cp /var/www/foo/releases/20160908054130/public/assets/.sprockets-manifest-c0a2b1248d736a1c3206a5b2d7043f1f.json /var/www/foo/releases/20160908054130/assets_manifest_backup as kozawa@192.168.116.131
+ DEBUG [a7f7d570] Command: cd /var/www/foo/releases/20160908054130 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env cp /var/www/foo/releases/20160908054130/public/assets/.sprockets-manifest-c0a2b1248d736a1c3206a5b2d7043f1f.json /var/www/foo/releases/20160908054130/assets_manifest_backup )
+  INFO [a7f7d570] Finished in 0.066 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [112f731e] Running if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [112f731e] Command: if test ! -d /var/www/foo/releases/20160908054130; then echo "Directory does not exist '/var/www/foo/releases/20160908054130'" 1>&2; false; fi
+ DEBUG [112f731e] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [a0fa2059] Running /usr/local/rbenv/bin/rbenv exec bundle exec rake db:migrate as kozawa@192.168.116.131
+ DEBUG [a0fa2059] Command: cd /var/www/foo/releases/20160908054130 && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" RAILS_ENV="development" ; /usr/local/rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [a0fa2059] 	== 20160719073405 CreateUsers: migrating ======================================
+-- create_table(:users)
+ DEBUG [a0fa2059] 	   -> 0.0082s
+== 20160719073405 CreateUsers: migrated (0.0083s) =============================
+
+  INFO [a0fa2059] Finished in 2.607 seconds with exit status 0 (successful).
+  INFO [ef64d294] Running /usr/bin/env ln -s /var/www/foo/releases/20160908054130 /var/www/foo/releases/current as kozawa@192.168.116.131
+ DEBUG [ef64d294] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ln -s /var/www/foo/releases/20160908054130 /var/www/foo/releases/current )
+  INFO [ef64d294] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [dd7d1db9] Running /usr/bin/env mv /var/www/foo/releases/current /var/www/foo as kozawa@192.168.116.131
+ DEBUG [dd7d1db9] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env mv /var/www/foo/releases/current /var/www/foo )
+  INFO [dd7d1db9] Finished in 0.064 seconds with exit status 0 (successful).
+ DEBUG [9d5be159] Running /usr/bin/env ls -xtr /var/www/foo/releases as kozawa@192.168.116.131
+ DEBUG [9d5be159] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env ls -xtr /var/www/foo/releases )
+ DEBUG [9d5be159] 	20160907072135	20160907072452	20160907073234	20160907074333	20160907085830
+20160908054130
+ DEBUG [9d5be159] Finished in 0.082 seconds with exit status 0 (successful).
+  INFO Keeping 5 of 6 deployed releases on 192.168.116.131
+  INFO [007cad33] Running /usr/bin/env rm -rf /var/www/foo/releases/20160907072135 as kozawa@192.168.116.131
+ DEBUG [007cad33] Command: ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env rm -rf /var/www/foo/releases/20160907072135 )
+  INFO [007cad33] Finished in 0.172 seconds with exit status 0 (successful).
+ DEBUG [bf93510e] Running if test ! -d /var/www/foo/releases; then echo "Directory does not exist '/var/www/foo/releases'" 1>&2; false; fi as kozawa@192.168.116.131
+ DEBUG [bf93510e] Command: if test ! -d /var/www/foo/releases; then echo "Directory does not exist '/var/www/foo/releases'" 1>&2; false; fi
+ DEBUG [bf93510e] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [fa810261] Running /usr/bin/env echo "Branch master (at db396ccb7e9a74164debfc0affd8985952d3de55) deployed as release 20160908054130 by kozawa" >> /var/www/foo/revisions.log as kozawa@192.168.116.131
+ DEBUG [fa810261] Command: cd /var/www/foo/releases && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env echo "Branch master (at db396ccb7e9a74164debfc0affd8985952d3de55) deployed as release 20160908054130 by kozawa" >> /var/www/foo/revisions.log )
+  INFO [fa810261] Finished in 0.083 seconds with exit status 0 (successful).
