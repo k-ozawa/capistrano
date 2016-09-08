@@ -465,3 +465,23 @@ I, [2016-09-08T14:41:47.353594 #7012]  INFO -- : Writing /var/www/foo/releases/2
   INFO [fa810261] Running /usr/bin/env echo "Branch master (at db396ccb7e9a74164debfc0affd8985952d3de55) deployed as release 20160908054130 by kozawa" >> /var/www/foo/revisions.log as kozawa@192.168.116.131
  DEBUG [fa810261] Command: cd /var/www/foo/releases && ( export RBENV_ROOT="/usr/local/rbenv" RBENV_VERSION="2.3.1" ; /usr/bin/env echo "Branch master (at db396ccb7e9a74164debfc0affd8985952d3de55) deployed as release 20160908054130 by kozawa" >> /var/www/foo/revisions.log )
   INFO [fa810261] Finished in 0.083 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-08 16:36:44 +0900 cap development deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [98d99641] Running [ -d /usr/local/rbenv/versions/2.3.1 ] as kozawa@192.168.116.131
+ DEBUG [98d99641] Command: [ -d /usr/local/rbenv/versions/2.3.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-08 16:52:49 +0900 cap development deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [250de60c] Running [ -d /usr/local/rbenv/versions/2.3.1 ] as kozawa@192.168.116.131
+ DEBUG [250de60c] Command: [ -d /usr/local/rbenv/versions/2.3.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-08 16:52:57 +0900 cap development deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [7e06d051] Running [ -d /usr/local/rbenv/versions/2.3.1 ] as kozawa@192.168.116.131
+ DEBUG [7e06d051] Command: [ -d /usr/local/rbenv/versions/2.3.1 ]
+  INFO ---------------------------------------------------------------------------
+  INFO START 2016-09-08 16:56:39 +0900 cap development deploy:check
+  INFO ---------------------------------------------------------------------------
+ DEBUG [d5127c78] Running [ -d /usr/local/rbenv/versions/2.3.1 ] as kozawa@192.168.116.131
+ DEBUG [d5127c78] Command: [ -d /usr/local/rbenv/versions/2.3.1 ]
