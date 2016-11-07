@@ -9,6 +9,6 @@ user: 'kozawa', #実行ユーザ
 roles: %w{web app db}, # サーバの役割
 ssh_options: {
     keys: %w(~/.ssh/id_rsa),
-    #auth_methods: %w(publickey), # 認証方法 passwordも可能
-    password: 'pass1234' #password指定
+    auth_methods: %w(publickey), # 認証方法 passwordも可能
+    #password: 'password' #password指定
 }
